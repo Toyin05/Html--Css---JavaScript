@@ -84,6 +84,7 @@ body {
     border: 0;
     outline: 0;
     font-size: 24px;
+    width: 70%; /* Adjusted width for better fit */
 }
 
 .container button img {
@@ -121,4 +122,49 @@ body {
 .container button:active {
     color: #f39c12;
     transition: 0.09s;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 5%; /* Reduce margin for smaller screens */
+    }
+
+    .container h1 {
+        font-size: 36px; /* Smaller heading size */
+    }
+
+    .display input {
+        font-size: 20px; /* Smaller font size for input */
+    }
+
+    .display img {
+        width: 25px; /* Smaller copy icon */
+    }
+
+    .container button {
+        width: 80%; /* Wider button on smaller screens */
+        font-size: 18px; /* Smaller button text */
+        padding: 12px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 28px; /* Further reduce heading size */
+    }
+
+    .display input {
+        font-size: 18px; /* Even smaller font size for input */
+    }
+
+    .display img {
+        width: 20px; /* Even smaller copy icon */
+    }
+
+    .container button {
+        width: 90%; /* Full width button on very small screens */
+        font-size: 16px; /* Smaller button text */
+        padding: 10px; /* Adjust padding */
+    }
+
 }
